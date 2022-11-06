@@ -292,12 +292,16 @@ a.active {
     from{
         right: 0px;
         top: 0px;
-        outline: 5px double rgb(6, 227, 251);   
+        outline: 1px dashed rgb(103 99 99);
+        border: none;
+        opacity: .5;
     }
     to {
         right: -70px;
         top: 0px;
-        outline: 0px double rgb(6, 227, 251);
+        outline: 0px double rgb(121 118 118);
+        border: none;
+        opacity: 1;
     }
 }
 
