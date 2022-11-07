@@ -163,3 +163,21 @@ $(document).ready(function () {
 
     });
 });
+
+
+let form = document.forms['contact']
+form.onsubmit = function(event){
+    event.preventDefault()
+
+    let name = document.forms['contact']['name'].value
+    let email = document.forms['contact']['email'].value
+    let phone = document.forms['contact']['phone'].value
+    let message = document.forms['contact']['message'].value
+
+
+    if(name = email = phone = message != ''){
+        alert("Data send successfully!")
+    }else {
+        alert("You can't any field empty!")
+    }
+}
