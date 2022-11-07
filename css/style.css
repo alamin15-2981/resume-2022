@@ -212,7 +212,7 @@ nav li {
 nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: rgb(112 112 112);
+    color: rgb(112, 112, 112);
     font-size: 11px;
     font-weight: bold;
 }
@@ -227,12 +227,12 @@ nav li a {
 }
 
 a:focus {
-    color: rgb(21 184 134) !important;
     text-decoration: none;
+    color: rgb(21, 184, 134) !important;
 }
 
 a:hover {
-    color: rgb(255 13 98);
+    color: rgb(255, 13, 98);
     text-decoration: none;
 }
 
@@ -242,13 +242,13 @@ a.active {
 
 #home {
     height: 100vh;
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200709/pngtree-wave-with-shadow-abstract-blue-lines-on-a-white-background-line-image_351282.jpg);
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200709/pngtree-wave-with-shadow-abstract-blue-lines-on-a-white-background-line-image_351282.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-origin: border-box;
     background-blend-mode: multiply;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .table-cell {
@@ -271,7 +271,7 @@ a.active {
 
 .about-border {
     position: absolute;
-    border: 8px double #00bcd4;
+    border: 8px double rgb(0, 188, 212);
     width: 400px;
     height: 400px;
     top: 40px;
@@ -284,12 +284,9 @@ a.active {
 }
 
 .my-photo {
-    transform-origin: top;
-    transform: perspective(250px) rotateY(165deg) !important;
-    border: none;
-
+    transform-origin: center top;
     animation-name: abc;
-    animation-duration: 1.6s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
@@ -297,15 +294,16 @@ a.active {
 }
 
 @keyframes abc {
-    from{
+    0% {
         right: 0px;
         top: 0px;
-        outline: 1px dashed rgb(103 99 99);
+        transform: perspective(250px) rotateY(180deg);
     }
-    to {
+
+    100% {
         right: -70px;
         top: 0px;
-        outline: 0px double rgb(121 118 118);
+        transform: perspective(250px) rotateY(165deg);
     }
 }
 
@@ -749,7 +747,7 @@ fieldset {
     }
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
     #mt-5 {
         margin-top: 200px;
     }
