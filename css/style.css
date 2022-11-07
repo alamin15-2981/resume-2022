@@ -4,6 +4,7 @@ h1 {
     font-family: "Playfair Display", serif;
     font-size: 80px;
     line-height: 70px;
+    color: rgb(81, 81, 81);
 }
 
 h4 {
@@ -211,7 +212,7 @@ nav li {
 nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: rgb(68, 68, 68);
+    color: rgb(112 112 112);
     font-size: 11px;
     font-weight: bold;
 }
@@ -226,12 +227,12 @@ nav li a {
 }
 
 a:focus {
-    color: rgb(68, 68, 68);
+    color: rgb(21 184 134) !important;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(66, 91, 181);
+    color: rgb(255 13 98);
     text-decoration: none;
 }
 
@@ -240,8 +241,14 @@ a.active {
 }
 
 #home {
-    background: url("../img/home-bg-2.jpg") 0% 0% / cover;
     height: 100vh;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200709/pngtree-wave-with-shadow-abstract-blue-lines-on-a-white-background-line-image_351282.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0,.8);
 }
 
 .table-cell {
@@ -279,6 +286,7 @@ a.active {
 .my-photo {
     transform-origin: top;
     transform: perspective(250px) rotateY(165deg) !important;
+    border: none;
 
     animation-name: abc;
     animation-duration: 1.6s;
@@ -293,15 +301,11 @@ a.active {
         right: 0px;
         top: 0px;
         outline: 1px dashed rgb(103 99 99);
-        border: none;
-        opacity: .5;
     }
     to {
         right: -70px;
         top: 0px;
         outline: 0px double rgb(121 118 118);
-        border: none;
-        opacity: 1;
     }
 }
 
