@@ -582,6 +582,28 @@ a.active {
     line-height: 50px;
 }
 
+.jumbotron {
+    background: #fefefe;
+    margin-top: 30px;
+}
+
+#hire-me h1 {
+    font-size: 75px;
+    font-weight: 900;
+    margin-bottom: 60px;
+    text-shadow: 2px 4px 8px #636363;
+}
+
+#hire-me p a {
+    font-weight: 500;
+    background: black;
+    border: none;
+    outline: none;
+    color: skyblue;
+    font-family: monospace;
+    box-shadow: 1px 3px 6px 0px #bfbfbf;
+}
+
 #contact {
     padding: 100px 0px;
     background: rgb(243, 243, 243);
